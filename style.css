@@ -1,0 +1,176 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui o preenchimento e a borda no cálculo do tamanho total */
+}
+
+/* Style the header */
+header {
+    margin-bottom: 10px; /* Adiciona uma margem inferior para separar o texto do cabeçalho */
+}
+
+body {
+    background-color: rgb(1, 1, 29);
+    font-size: 16px; /* Defina um tamanho de fonte base */
+    color: #fff; /* Define a cor padrão do texto */
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Style the list (ul) inside the navigation bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Style the individual list items (li) */
+nav ul li {
+    margin-right: 20px; /* Adiciona espaço entre os itens */
+}
+
+/* Style the links (a) inside the list items */
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* Change the background color on hover */
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Style the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the search input */
+#search-input {
+    padding: 6px;
+    font-size: 1rem; /* Tamanho de fonte relativo */
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Style the search button */
+#search-icon {
+    background-color: transparent;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style the search button icon */
+#search-icon img {
+    width: 1rem; /* Tamanho do ícone de pesquisa relativo */
+    height: 1rem;
+}
+
+/* Style content section */
+.content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style text content */
+.text-content {
+    margin-right: 20px; /* Adiciona espaço entre o texto e a imagem */
+}
+
+/* Style h1 */
+h1 {
+    color: #fff;
+    font-family: 'Lobster', cursive; /* Altera a fonte do cabeçalho */
+    font-weight: 300;
+    font-size: 4rem; /* Tamanho de fonte relativo */
+}
+
+/* Style h3 */
+h3 {
+    color: #fff;
+    font-family: 'Lobster', cursive; /* Altera a fonte do subcabeçalho */
+    font-weight: 300;
+    font-size: 1.5rem; /* Tamanho de fonte relativo */
+}
+
+/* Style images */
+.content img {
+    margin-left: auto; /* Move a imagem completamente para a direita */
+}
+
+/* Style text body */
+.text-body h2 {
+    margin: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.carousel-container {
+    width: 80%; /* Defina a largura do carrossel */
+    margin: 0 auto; /* Centralize o carrossel na página */
+    overflow-x: auto; /* Adicione a rolagem horizontal */
+    white-space: nowrap; /* Evite que os itens do carrossel quebrem a linha */
+    text-align: center; /* Centralize os itens horizontalmente */
+    padding-top: 50px; /* Adicione um espaçamento superior */
+}
+
+.text-book h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    padding: 80px;
+    font-family: cursive;
+}
+.carousel {
+    display: flex; /* Altera o display para flex para alinhar os livros lado a lado */
+    overflow-x: auto; /* Adiciona rolagem horizontal caso haja muitos livros */
+}
+
+.book {
+    flex: 0 0 auto; /* Os livros não devem crescer para preencher o espaço disponível */
+    width: 250px; /* Largura de cada livro */
+    margin-right: 20px; /* Espaçamento entre os livros */
+    text-align: center; /* Centraliza o texto */
+    color: #fff; /* Cor do texto */
+}
+
+
+.book img {
+    max-width: 100%; /* Garante que as imagens dos livros não ultrapassem o contêiner */
+}
+
+.title {
+    font-size: 18px; /* Tamanho da fonte para o título */
+    font-weight: lighter; /* Texto em negrito para o título */
+    display: block; /* Garante que o título fique em uma linha */
+    margin-bottom: 5px; /* Espaçamento inferior entre o título e o autor */
+}
+
+.author {
+    font-size: 14px; /* Tamanho da fonte para o autor */
+}
+.book a {
+    color: #fff; /* Define a cor do texto para os links dos livros */
+    text-decoration: none;
+}
+
+.book a:hover {
+    color: #fff; /* Mantém a cor do texto em branco ao passar o mouse sobre os links */
+}
